@@ -7,7 +7,7 @@ html, body{
 }
 
 .main {
-    background-image: url("/eiger_mountain_grindelwald_landscape.jpg");
+    background-image: url("/res/eiger_mountain_grindelwald_landscape.jpg");
     height: 100vh;
     widows: 100vw;
     background-size: cover;
@@ -48,7 +48,6 @@ html, body{
     }
 
     input{
-        background-color: red;
         border: none;
         outline: none;
         padding: 0.2em;;
