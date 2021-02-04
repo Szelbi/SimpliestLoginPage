@@ -1,0 +1,24 @@
+* {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+html, body{
+    margin: 0;
+}
+
+.main {
+    background-image: url("flatlandscape_v_2.jpg");
+    height: 100vh;
+    widows: 100vw;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background-color: hsla(200, 100%, 50%, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+}

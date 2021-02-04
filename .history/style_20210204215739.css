@@ -1,0 +1,15 @@
+* {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+html, body{
+    margin: 0;
+}
+
+.main {
+    background-image: url("flatlandscape_v_2.jpg");
+    height: 100vh;
+    widows: 100vw;
+    background-size: cover;
+    background-position: center;
+}
