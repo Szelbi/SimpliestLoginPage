@@ -26,11 +26,14 @@ html, body{
     border-radius: 10px;
 }
 
+$font-size-big: 2.5rem;
+$font-size-label: 1.2rem;
+
 .login-title {
     color: white;
     text-align: center;
     font-weight: normal;
-    font-size: 2.5em;
+    font-size: $font-size-big;
     margin: 0;
     margin-bottom: 30px;
 }
@@ -43,7 +46,7 @@ html, body{
     label{
         color: white;
         font-weight: lighter;
-        font-size: 1.2em;
+        font-size: $font-size-label;
         margin-bottom: 5px;
     }
 
@@ -57,7 +60,25 @@ html, body{
 
         &:focus{
             border:1px solid hsl(200, 100%, 50%);
+
         }
+    }
+}
+
+.login-button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px 30px;
+    background-color:  hsla(200, 100%, 50%, 0.1);
+    outline: none;
+    border-radius: 5px;
+    font-size: $font-size-label;
+    font-weight: lighter;
+    color: white;
+
+    &:hover{
+        background-color:  hsla(200, 100%, 50%, 0.7);
+        cursor: pointer;
     }
 }
 

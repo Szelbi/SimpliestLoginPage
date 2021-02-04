@@ -36,7 +36,7 @@ html, body {
   color: white;
   text-align: center;
   font-weight: normal;
-  font-size: 2.5em;
+  font-size: 2.5rem;
   margin: 0;
   margin-bottom: 30px;
 }
@@ -55,7 +55,7 @@ html, body {
 .input-group label {
   color: white;
   font-weight: lighter;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   margin-bottom: 5px;
 }
 
@@ -70,5 +70,22 @@ html, body {
 
 .input-group input:focus {
   border: 1px solid #00aaff;
+}
+
+.login-button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px 30px;
+  background-color: rgba(0, 170, 255, 0.1);
+  outline: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  color: white;
+}
+
+.login-button:hover {
+  background-color: rgba(0, 170, 255, 0.7);
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
