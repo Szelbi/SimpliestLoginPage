@@ -60,9 +60,9 @@ html, body {
 }
 
 .input-group input {
-  border: 1px solid #161b1d;
+  border: 1px solid #171a1c;
   outline: none;
-  background-color: rgba(226, 231, 233, 0.5);
+  background-color: rgba(227, 230, 232, 0.5);
   padding: 10px;
   border-radius: 5px;
   color: black;
@@ -79,15 +79,20 @@ html, body {
   padding: 10px 30px;
   background-color: rgba(0, 170, 255, 0.1);
   outline: none;
-  border: 2px solid rgba(0, 170, 255, 0.5);
+  border: 2px solid rgba(0, 170, 255, 0.7);
   border-radius: 5px;
   font-size: 1.2rem;
   font-weight: lighter;
   color: white;
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, rgba(0, 170, 255, 0.2)), color-stop(50%, rgba(0, 170, 255, 0.7))) right;
+  background: linear-gradient(to left, rgba(0, 170, 255, 0.2) 50%, rgba(0, 170, 255, 0.7) 50%) right;
+  background-size: 200%;
+  -webkit-transition: .5s ease-out;
+  transition: .5s ease-out;
 }
 
 .login-button:hover {
-  background-color: rgba(0, 170, 255, 0.7);
+  background-position: left;
   cursor: pointer;
 }
 

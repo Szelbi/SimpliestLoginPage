@@ -41,7 +41,18 @@ $background-color: hsla(200, 15%, 20%, 0.5);
 
 $font-size-big: 2.5rem;
 $font-size-label: 1.2rem;
-$solid-blue: $solid-blue;
+
+@function solid-blue($alpha){
+    @return hsla(200, 100%, 50%, $alpha)
+};
+
+@function dark-blue($alpha){
+    @return hsla(200, 10%, 10%, $alpha)
+};
+
+@function light-blue($alpha){
+    @return hsla(200, 10%, 90%, $alpha)
+};
 
 .login-title {
     color: white;
@@ -65,16 +76,16 @@ $solid-blue: $solid-blue;
     }
 
     input{
-        border: 1px solid hsl(200, 15%, 10%);
+        border: 1px solid dark-blue(1);
         outline: none;    
-        background-color:  hsla(197, 14%, 90%, 0.5);
+        background-color:  light-blue(0.5);
         padding: 10px;
         border-radius: 5px;
         color:black;
         font-size: 1.1em;
 
         &:focus{
-            border:1px solid $solid-blue;
+            border:1px solid solid-blue(1);
         }
     }
 }
@@ -85,19 +96,23 @@ $solid-blue: $solid-blue;
     padding: 10px 30px;
     background-color:  hsla(200, 100%, 50%, 0.1);
     outline: none;
-    border:2px solid hsla(200, 100%, 50%, 0.5);;
+    border:2px solid solid-blue(0.7);
     border-radius: 5px;
     font-size: $font-size-label;
     font-weight: lighter;
     color: white;
 
+
+    background: linear-gradient(to left, solid-blue(0.2) 50%, solid-blue(0.7) 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+
     &:hover{
-        background-color:  hsla(200, 100%, 50%, 0.7);
+        background-position: left;
         cursor: pointer;
     }
     &:focus{
-        background-color:  hsla(200, 100%, 50%, 1);
+        background-color:  solid-blue(1);
         cursor: pointer;
     }
 }
-
