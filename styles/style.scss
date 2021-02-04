@@ -15,6 +15,7 @@ html, body{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .login-container {
@@ -24,6 +25,8 @@ html, body{
     width:50%;
     max-width: 400px;
     border-radius: 10px;
+    box-shadow: 0 0 20px 20px hsla(200, 15%, 20%, 0.5);
+    // backdrop-filter: grayscale(0.5) opacity(0.8) 
 }
 
 $font-size-big: 2.5rem;
@@ -56,11 +59,11 @@ $font-size-label: 1.2rem;
         background-color:  hsla(200, 15%, 90%, 0.5);
         padding: 10px;
         border-radius: 5px;
-        color:white;
+        color:black;
+        font-size: 1.1em;
 
         &:focus{
             border:1px solid hsl(200, 100%, 50%);
-
         }
     }
 }
@@ -71,6 +74,7 @@ $font-size-label: 1.2rem;
     padding: 10px 30px;
     background-color:  hsla(200, 100%, 50%, 0.1);
     outline: none;
+    border:2px solid hsla(200, 100%, 50%, 0.5);;
     border-radius: 5px;
     font-size: $font-size-label;
     font-weight: lighter;
@@ -78,6 +82,10 @@ $font-size-label: 1.2rem;
 
     &:hover{
         background-color:  hsla(200, 100%, 50%, 0.7);
+        cursor: pointer;
+    }
+    &:focus{
+        background-color:  hsla(200, 100%, 50%, 1);
         cursor: pointer;
     }
 }
