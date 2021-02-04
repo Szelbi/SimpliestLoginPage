@@ -17,20 +17,31 @@ html, body{
     align-items: center;
     
 }
+$background-color: hsla(200, 15%, 20%, 0.5);
 
 .login-container {
-    background-color: hsla(200, 15%, 20%, 0.5);
+    background-color: $background-color;
     padding: 40px;
     min-width: 200px;
     width:50%;
     max-width: 400px;
     border-radius: 10px;
-    box-shadow: 0 0 20px 20px hsla(200, 15%, 20%, 0.5);
+    // box-shadow: 0 0 30px 30px $background-color;
+    // backdrop-filter: blur(3px);
     // backdrop-filter: grayscale(0.5) opacity(0.8) 
 }
 
+// @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+//     .login-container {
+//     //   -webkit-backdrop-filter: blur(10px);
+//       backdrop-filter: blur(10px);
+//       background-color: $background-color; 
+//     }
+//   }
+
 $font-size-big: 2.5rem;
 $font-size-label: 1.2rem;
+$solid-blue: $solid-blue;
 
 .login-title {
     color: white;
@@ -56,14 +67,14 @@ $font-size-label: 1.2rem;
     input{
         border: 1px solid hsl(200, 15%, 10%);
         outline: none;    
-        background-color:  hsla(200, 15%, 90%, 0.5);
+        background-color:  hsla(197, 14%, 90%, 0.5);
         padding: 10px;
         border-radius: 5px;
         color:black;
         font-size: 1.1em;
 
         &:focus{
-            border:1px solid hsl(200, 100%, 50%);
+            border:1px solid $solid-blue;
         }
     }
 }

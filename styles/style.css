@@ -30,8 +30,6 @@ html, body {
   width: 50%;
   max-width: 400px;
   border-radius: 10px;
-  -webkit-box-shadow: 0 0 20px 20px rgba(43, 54, 59, 0.5);
-          box-shadow: 0 0 20px 20px rgba(43, 54, 59, 0.5);
 }
 
 .login-title {
